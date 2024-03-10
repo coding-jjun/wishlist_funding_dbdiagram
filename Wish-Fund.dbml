@@ -6,7 +6,7 @@ Table User {
   userPhone varchar [not null, unique]
   userEmail varchar
   userBirth datetime
-  userAcct varchar [unique]
+  accId integer [unique, ref: > Account.accId]
   userImg integer [ref: > Image.imgId]
   regAt timestamp
   uptAt timestamp
